@@ -1,1 +1,40 @@
 // Navigation Styles here
+.navigation {
+    max-width: 100%;
+
+    .top-section{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: dashed .2rem @silver;
+        max-width: 800px;
+        margin: 0 auto;
+
+        @media @mediascreen {
+            flex-direction: column;
+
+            .title{
+                align-self: center;
+            }
+
+            .links{
+                justify-content: space-evenly;
+            }
+        }
+    
+
+        .links {
+            align-self: center;
+
+            a{
+                padding: 1rem;
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: @eastern-blue;
+                    font-size: 2rem;
+
+                }
+            }
+        }
+    }
+}
